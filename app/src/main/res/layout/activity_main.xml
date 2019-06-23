@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/guideLine12"
+            app:layout_constraintGuide_percent="0.25"/>
+
+    <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="end"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="40sp"/>
+    <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="end"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="55sp"
+            />
+
+        <Button
+                android:id="@+id/tvClear"
+                android:text="ce"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine13"
+                app:layout_constraintEnd_toEndOf="@id/guideLine1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideLine12"/>
+
+        <Button
+                android:id="@+id/tvOpen"
+                android:text="("
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine13"
+                app:layout_constraintEnd_toEndOf="@id/guideLine2"
+                app:layout_constraintStart_toStartOf="@id/guideLine1"
+                app:layout_constraintTop_toTopOf="@id/guideLine12"/>
+
+         <Button
+                 android:id="@+id/tvClose"
+                 android:text=")"
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:background="@color/colorPrimary"
+                 app:layout_constraintBottom_toBottomOf="@id/guideLine13"
+                 app:layout_constraintEnd_toEndOf="@id/guideLine3"
+                 app:layout_constraintStart_toStartOf="@id/guideLine2"
+                 app:layout_constraintTop_toTopOf="@id/guideLine12"/>
+
+         <Button
+                 android:id="@+id/tvDevine"
+                 android:text="/"
+                 android:layout_width="0dp"
+                 android:layout_height="0dp"
+                 android:background="@color/colorAccent"
+                 app:layout_constraintBottom_toBottomOf="@id/guideLine13"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="@id/guideLine3"
+                 app:layout_constraintTop_toTopOf="@id/guideLine12"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/guideLine13"
+            app:layout_constraintGuide_percent="0.40"/>
+
+        <Button
+                android:id="@+id/tvSeven"
+                android:text="7"
+                android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:background="@color/colorPrimaryDark"
+               app:layout_constraintBottom_toBottomOf="@id/guideLine14"
+               app:layout_constraintEnd_toEndOf="@id/guideLine1"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="@id/guideLine13"/>
+
+        <Button
+                android:id="@+id/tvEight"
+                android:text="8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine14"
+                app:layout_constraintEnd_toEndOf="@id/guideLine2"
+                app:layout_constraintStart_toStartOf="@id/guideLine1"
+                app:layout_constraintTop_toTopOf="@id/guideLine13"/>
+
+        <Button
+                android:id="@+id/tvNine"
+                android:text="9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine14"
+                app:layout_constraintEnd_toEndOf="@id/guideLine3"
+                app:layout_constraintStart_toStartOf="@id/guideLine2"
+                app:layout_constraintTop_toTopOf="@id/guideLine13"/>
+
+        <Button
+                android:id="@+id/tvMultiply"
+                android:text="*"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideLine3"
+                app:layout_constraintTop_toTopOf="@id/guideLine13"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/guideLine14"
+            app:layout_constraintGuide_percent="0.55"/>
+
+    <Button
+            android:id="@+id/tvFour"
+            android:text="4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine15"
+            app:layout_constraintEnd_toEndOf="@id/guideLine1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideLine14"/>
+
+    <Button
+            android:id="@+id/tvFive"
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine15"
+            app:layout_constraintEnd_toEndOf="@id/guideLine2"
+            app:layout_constraintStart_toStartOf="@id/guideLine1"
+            app:layout_constraintTop_toTopOf="@id/guideLine14"/>
+
+    <Button
+            android:id="@+id/tvSix"
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine15"
+            app:layout_constraintEnd_toEndOf="@id/guideLine3"
+            app:layout_constraintStart_toStartOf="@id/guideLine2"
+            app:layout_constraintTop_toTopOf="@id/guideLine14"/>
+
+    <Button
+            android:id="@+id/tvMinus"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideLine3"
+            app:layout_constraintTop_toTopOf="@id/guideLine14"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/guideLine15"
+            app:layout_constraintGuide_percent="0.7031464"/>
+
+        <Button
+                android:id="@+id/tvOne"
+                android:text="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine16"
+                app:layout_constraintEnd_toEndOf="@id/guideLine1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideLine15"/>
+
+    <Button
+            android:id="@+id/tvTwo"
+            android:text="2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine16"
+            app:layout_constraintEnd_toEndOf="@id/guideLine2"
+            app:layout_constraintStart_toStartOf="@id/guideLine1"
+            app:layout_constraintTop_toTopOf="@id/guideLine15"/>
+
+    <Button
+            android:id="@+id/tvTree"
+            android:text="3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine16"
+            app:layout_constraintEnd_toEndOf="@id/guideLine3"
+            app:layout_constraintStart_toStartOf="@id/guideLine2"
+            app:layout_constraintTop_toTopOf="@id/guideLine15"/>
+
+    <Button
+            android:id="@+id/tvPlus"
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/guideLine16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideLine3"
+            app:layout_constraintTop_toTopOf="@id/guideLine15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:id="@+id/guideLine16"
+            app:layout_constraintGuide_percent="0.8508892"/>
+
+    <Button
+            android:id="@+id/tvDot"
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLine1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideLine16"/>
+
+    <Button
+            android:id="@+id/tvZero"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLine2"
+            app:layout_constraintStart_toStartOf="@id/guideLine1"
+            app:layout_constraintTop_toTopOf="@id/guideLine16"/>
+
+    <Button
+            android:id="@+id/tvBack"
+            android:text="clear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLine3"
+            app:layout_constraintStart_toStartOf="@id/guideLine2"
+            app:layout_constraintTop_toTopOf="@id/guideLine16"/>
+
+    <Button
+            android:id="@+id/tvEquals"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideLine3"
+            app:layout_constraintTop_toTopOf="@id/guideLine16"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:id="@+id/guideLine1"
+            app:layout_constraintGuide_percent="0.25"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:id="@+id/guideLine2"
+            app:layout_constraintGuide_percent="0.50121653"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:id="@+id/guideLine3"
+            app:layout_constraintGuide_percent="0.75"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
